@@ -1,0 +1,14 @@
+{
+  "name": "morning_exercise",
+  "version": "1.0.0",
+  "description": "ROT-N Cipher & TDD",
+  "main": "rot_n.js",
+  "scripts": {
+    "test": "mocha spec/queue-spec.js ; mocha spec/stack-spec.js"
+  },
+  "author": "Kristyn Bryan, WDIR-Hopper",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.1.2"
+  }
+}

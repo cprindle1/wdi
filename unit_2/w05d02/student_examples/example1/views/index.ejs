@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Fruits index page</h1>
+    <%for(var i=0; i<fruits.length; i++){%>
+      <div><a href= <%="./"+i%> </a></div><br>
+    <%=fruits[i].name%>
+    <%}%>
+  </body>
+</html>

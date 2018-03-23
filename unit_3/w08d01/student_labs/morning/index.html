@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app = "ToDoList">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller = "ToDoController as ctrl">
+    <ul>
+      <li ng-if="ctrl.itemHide" ng-click="ctrl.edit()" ng-repeat="item in ctrl.toDoList">{{item}}<button ng-click="ctrl.deleteItem($index)">Delete</button></li>
+      <li ng-if="ctrl.editHide" ng-repeat="item in ctrl.toDoList">
+          <form ng-show="ctrl.editHide" ng-submit="ctrl.handleUpdate(ctrl.listItem)">
+            <input ng-model="ctrl.toDoList[$index]"/>
+            <input type="submit" value="Update">
+          </form></li>
+    </ul>
+
+    <form ng-submit="ctrl.handleSubmit(ctrl.listItem)">
+      <input ng-model="ctrl.listItem"/>
+      <input type="submit" value="Submit The Form">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,447 @@
+/* GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  background: black;
+  margin: 0 auto;
+  width: 1140px;
+  height: 100%;
+  font-family:'Lato', sans-serif;
+}
+/* HEADER */
+header {
+  width: 100%;
+  height: 75%;
+  top: 0;
+  background: white;
+}
+h1 {
+  font-size: 140px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline;
+  line-height: 140px;
+  color: rgb(35,35,35);
+}
+h2 {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline;
+  line-height: 40px;
+  color: rgb(35,35,35);
+}
+h3 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline;
+  line-height: 70px;
+  color: rgb(35,35,35);
+}
+h4 {
+  font-size: 300px;
+  font-weight: 900;
+  display: inline;
+  line-height: 220px;
+  color: rgb(35,35,35);
+}
+.headertext {
+  width: 45%;
+  height: 100%;
+  margin-right: 6px;
+  display: inline-block;
+  text-align: right;
+}
+.headeraccent { /* right side/accented part of header */
+  width: 50%;
+  height: 100%;
+  background: rgb(35,35,35);
+  text-align: left;
+  display: inline-block;
+}
+.headertext h4 {
+  margin-left: 220px; /* moves 20 over to blend with accent background */
+}
+/* changes text color of accent side of header */
+.headeraccent h1, .headeraccent h4 {
+  color: rgb(183, 207, 66);
+}
+.headeraccent h2, .headeraccent h3{
+  color: rgb(183, 207, 66);
+  margin-left: 10px;
+}
+/* MAIN STYLING */
+main {
+  width: 100%;
+}
+.contain { /* container for each small section */
+  width: 100%;
+  height: 25em;
+}
+.title { /* skeleton for each small section's main title */
+  width: 30%;
+  padding: 10px;
+  margin: 0 auto;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+  position: relative;
+  top: 15px;
+  z-index: 1;
+}
+/* age responsive web design */
+#design { /* changes background of just the design container and title */
+  background: rgb(80,80,80);
+}
+.designtext {
+  width: 55%;
+  height: 100%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.designaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  float: right;
+  box-sizing: border-box;
+  background: rgb(55,55,55);
+  margin-top: -92px;
+  margin-right: 40px;
+}
+
+.designaccent img {
+  width: 100%;
+  height: 100%;
+}
+/* skeleton screens */
+#skeleton { /* changes background of just the skeleton container and title */
+  background: rgb(173,98,194);
+}
+.skeletonaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  background: rgb(135,81,147);
+  margin-top: -57px;
+  margin-left: 40px;
+}
+.skeletontext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+.skeletonaccent img {
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+/* engagement bots */
+#bots { /* changes background of just the bots container and title */
+  background: rgb(26,151,252);
+}
+.botstext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.botsaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  float: right;
+  box-sizing: border-box;
+  background: rgb(26,122,189);
+  margin-top: -56px;
+  margin-right: 40px;
+}
+
+.botsaccent img {
+  width: 76%;
+  height: auto;
+  position: relative;
+  left: 13%;
+}
+/* upsell marketing */
+#upsell { /* changes background of just the upsell container and title */
+  background: rgb(253,162,41);
+}
+.upsellaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  background: rgb(206,128,46);
+  margin-top: -92px;
+  margin-left: 40px;
+}
+.upselltext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+.upsellaccent img {
+  width: 45%;
+  height: auto;
+  position: relative;
+  top: 13%;
+  left: 23%;
+}
+/* pro-tip */
+.procontain { /* container for pro-tip */
+  width: 100%;
+  height: 9em;
+  background: white;
+}
+.pro { /* container for pro-tip title content */
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  border-top: 5px solid rgba(0,0,0,.2);
+  border-bottom: 5px solid rgba(0,0,0,.2);
+  background: rgb(184,225,70);
+  position: relative;
+  top: 15px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.pro img {
+  position: relative;
+  left: 50px;
+}
+.protitle {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  display: inline-block;
+  position: relative;
+  top: -17px;
+  left: 60px;
+}
+.prodesc {
+  display: inline-block;
+  color: rgb(55,55,55);
+  font-size: 20px;
+  position: relative;
+  top: -27px;
+  left: 75px;
+}
+.proaccent {
+  width: 55%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  float: right;
+  box-sizing: border-box;
+  background: rgb(55,55,55);
+  margin-top: -116px;
+  margin-right: 40px;
+}
+/* cta buttons */
+#cta { /* changes background of just the buttons container and title */
+  background: rgb(237,158,204);
+}
+.ctatext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.ctaaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  float: right;
+  box-sizing: border-box;
+  background: rgb(180,126,156);
+  margin-top: -92px;
+  margin-right: 40px;
+}
+
+.ctaaccent img {
+  width: 86%;
+  height: auto;
+  position: relative;
+  left: 14%;
+  top: 30%;
+}
+/* persuader videos */
+#video { /* changes background and height of video container */
+  background: rgb(253,98,100);
+}
+#videotitle {
+  width: 43%;
+  background: rgb(253,98,100);
+}
+.videoaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  background: rgb(204,79,83);
+  margin-top: -56px;
+  margin-left: 40px;
+}
+.videotext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+  float: right;
+}
+.videoaccent img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 33%;
+  left: 25%;
+}
+/* landing page */
+#land { /* changes background of just the landing page container and title */
+  background: rgb(29,188,136);
+}
+.landtext {
+  width: 55%;
+  padding: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.landaccent {
+  width: 40%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  float: right;
+  box-sizing: border-box;
+  background: rgb(28,145,109);
+  margin-top: -56px;
+  margin-right: 40px;
+}
+.landaccent img {
+  width: 56%;
+  height: auto;
+  position: relative;
+  left: 23%;
+  top: 17%;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 8em;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav {
+  width: 20%;
+  position: relative;
+  top: 55%;
+  left: 3%;
+  color: rgb(184,225,70);
+  display: inline-block;
+}
+nav ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+nav li {
+  display: inline;
+  color: white;
+  background: rgb(88,88,88);
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.logo {
+  width: 50%;
+  height: 95%;
+  background: rgb(55,55,55);
+  border-right: 10px solid rgb(184,225,70);
+  border-left: 10px solid rgb(184,225,70);
+  border-bottom: 10px solid rgb(184,225,70);
+  position: relative;
+  top: -10px;
+  right: 20px;
+  float: right;
+}
+.logotitle {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.logotagline {
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgb(184,225,70);
+  left: 100px;
+  text-align: center;
+  margin-top: 5px;
+}
+strong {
+  color: rgb(184,225,70);
+}

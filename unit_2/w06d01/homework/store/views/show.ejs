@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href='/css/style.css'>
+  </head>
+  <body>
+    <h1 id="header">Product Show Page</h1>
+    <div class='product_container'>
+      <a class='product_elements' href="/products/<%=products.id%>"><%=products.name; %>
+    </br><img class='productImg' src='<%=products.img%>'>
+  </br>  $<%=products.price; %>.</a></br>
+</br>  <%=products.description; %>.</a></br></br>
+  <%if(products.qty>0){%>
+    <h3 id='instock'><%=products.qty; %> Available</h3>
+    <%}else{%>
+      <h3 id='outOfStock'>Out Of Stock</h3>
+      <%}%>
+      </br>
+      <%if(products.qty>0){%>
+    <form id="deleteForm" action="/products/buy/<%=products.id%>?_method=PUT" method="POST">
+      <input id='deleteButton' type="submit" value="Buy"/>
+    </form>
+    <%}%>
+</br>
+
+  <a id='newProdLink' href='/products/<%=products.id%>/edit'>Edit Product</a></br></br>
+  <form id='deleteForm' action='/products/<%=products.id%>?_method=DELETE' method='POST'>
+    <input id='deleteButton' type='submit' value='Delete'/></br></br>
+  </form>
+  </div>
+    </br>
+    </br>
+    <nav id='newProd'>
+    <a id='newProdLink' href='/products'>Back to Product Index</a>
+  </nav>
+    </body>
+</html>

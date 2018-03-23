@@ -1,0 +1,24 @@
+.song{
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  background-color: lightblue;
+  color: royalblue;
+  overflow: auto;
+  border: 3px solid darkblue;
+  margin: 10px;
+  border-radius: 10px;
+}
+.song li{
+  list-style: none;
+}
+.songs{
+  text-align: center;
+}
+
+input{
+  width: 50%;
+  height: 20px;
+  margin: 10px;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="MarxBrotherApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app.js"></script></head>
+  <body>
+    <main>
+      <div ng-controller="FamilyController as family">
+        <h1>The {{family.name}} brothers</h1>
+      <div ng-repeat="name in family.names" ng-controller="BrotherController as brother">{{name}}
+        <button ng-click="brother.listSiblings($index)">List siblings</button>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>

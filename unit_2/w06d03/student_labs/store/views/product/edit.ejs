@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1>Edit <%=product.name%>'s Info</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/product">Products Index</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>product Attributes:</h2>
+			<form action="/product/<%=product._id%>?_method=PUT" method="post">
+				Name: <input type="text" name="name" value="<%=product.name%>"/><br/>
+				Description: <textarea name="description"><%=product.description%></textarea><br/>
+				Price: <input type="text" name="price" value="<%=product.price%>"/><br/>
+				Quantity Available: <input type="text" name="qty" value="<%=product.qty%>"/><br/>
+
+				<input type="submit" value="Update product"/>
+			</form>
+		</main>
+	</body>
+</html>

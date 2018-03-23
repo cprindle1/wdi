@@ -1,0 +1,50 @@
+nav a{
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  display: block;
+}
+/*.container{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
+.top{
+  display: flex;
+}
+.top img{
+  width: 100%;
+  height: 20%;
+}
+.middle{
+  display: flex;
+  justify-content: space-between;
+}
+.middle img{
+  width: 30%;
+  height: 15%;
+  padding: 2% 0;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;;
+}
+.bottom img{
+  width: 48%;
+  height: 12%;
+}
+
+.left{
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  float:left;
+  height: 100vh;
+  padding-left: 5%;
+  opacity: .5;
+}
+.left img{
+  width: 20%;
+  height: 15%;
+}

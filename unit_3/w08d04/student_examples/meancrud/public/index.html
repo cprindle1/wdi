@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='MousseApp'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src='/js/app.js'></script>
+  </head>
+  <body ng-controller = 'MainController as main'>
+    <h1>Meeses</h1>
+    <ul>
+      <li ng-repeat = 'mousse in main.mousses' ng-click='main.showEdit(mousse._id)'>
+        <ul ng-if="main.editableMousseId !== mousse._id">
+          <li>{{mousse.flavor}}</li>
+          <li>{{mousse.texture}}</li>
+          <li>{{mousse.color}}</li>
+          <li ng-if='mousse.goesWithFruit'>Goes with Fruit</li>
+        </ul>
+        <form ng-submit="main.updateMousse(mousse)" ng-if="main.editableMousseId == mousse._id">
+          <input type = 'text' ng-model = 'mousse.flavor'/></br>
+          <input type = 'text' ng-model = 'mousse.texture'/></br>
+          <input type = 'text' ng-model = 'mousse.color'/></br>
+          Goes with Fruit<input type = 'checkbox' ng-model = 'mousse.goesWithFruit'/></br>
+          <input type = 'submit' value = 'Update This Mousse'/>        </form>
+        <button ng-click="main.deleteMousse(mousse._id)">Delete</button>
+      </li>
+    </ul>
+    <form ng-submit = "main.create()">
+      <input type = 'text' placeholder="Flavor" ng-model = 'main.flavor'/></br>
+      <input type = 'text' placeholder="Texture" ng-model = 'main.texture'/></br>
+      <input type = 'text' placeholder="Color" ng-model = 'main.color'/></br>
+      Goes with Fruit<input type = 'checkbox' ng-model = 'main.goesWithFruit'/></br>
+      <input type = 'submit' value = 'Create Yummy Mousse'/>
+    </form>
+  </body>
+</html>

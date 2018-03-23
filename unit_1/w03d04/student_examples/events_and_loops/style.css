@@ -1,0 +1,19 @@
+*{
+  background-color: DarkSeaGreen;
+}
+.square{
+  /*width: 20px;
+  height: 20px;*/
+  background-color: ivory;
+  /*display: inline-block;*/
+  float: left;
+}
+
+.pink{
+  background-color: pink;
+}
+
+#container{
+  width: 500px;
+  height: 500px;
+}

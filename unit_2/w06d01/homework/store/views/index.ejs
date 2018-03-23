@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href='/css/style.css'>
+  </head>
+  <body>
+    <h1 id="header">Mongoose Store</h1>
+    <ul id="products">
+    <% for(var i = 0; i < products.length; i++){ %>
+        <li class='product_listing'>
+          <div class='product_container'>
+            <a class='product_elements' href="/products/<%=products[i].id%>"><%=products[i].name; %>
+          </br><img src='<%=products[i].img%>'>
+          </br>  $<%=products[i].price; %>.</a>
+          
+        </div>
+        </li>
+    <% } %>
+</ul>
+</br>
+<nav id='newProd'>
+  <a id='newProdLink' href='/products/new'>Create a New Product</a>
+</nav>
+  </body>
+</html>

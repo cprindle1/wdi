@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1><%=product.name%></h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/product">products Index</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				Description: <%=product.description%>
+			</section>
+			<section>
+				Price: $<%=product.price%>
+			</section>
+			<section>
+				Quantity available: <%=product.qty%>
+			</section>
+		</main>
+    <section>
+    <form action="/product/<%=product._id%>?_method=DELETE" method="post">
+        <input type="submit" value="Delete product"/>
+    </form>
+    <section>
+    <a href="/product/<%=product._id%>/edit">Edit</a>
+</section>
+</section>
+	</body>
+</html>

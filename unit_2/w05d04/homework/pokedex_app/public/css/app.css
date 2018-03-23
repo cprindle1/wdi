@@ -1,0 +1,51 @@
+.card{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid darkblue;
+
+}
+
+.cardHover{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 3px solid red;
+}
+.right{
+text-align: right;
+}
+.cards{
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.li{
+  list-style: none;
+}
+.button{
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+.buttonHover{
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;
+  color: darkblue;
+  cursor: pointer;
+}
+.input{
+  margin: 5px;
+  background-color: white;
+}
+*{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: lightyellow;
+
+}

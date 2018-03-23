@@ -1,0 +1,10 @@
+.image{
+  width:150px;
+  height:150px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.image img{
+  width-max: 150px;
+  heigh-max:150px;
+}

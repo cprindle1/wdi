@@ -1,0 +1,94 @@
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(61,152,158);
+  text-align: center;
+  /*padding-bottom: 40px;*/
+  height: 100px;
+  top: 0;
+
+}
+img{
+  width: 100%;
+}
+#page-title {
+  color: rgb(178,213,216);
+  font-size: 65px;
+  margin-top: 0;
+}
+h1{
+  text-shadow: 3px 3px rgb(32,78,81);
+}
+h1, h2, h3 {
+  color: rgb(32,78,81);
+  /*font-family: sans-serif;*/
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+.section-title {
+  font-size: 45px;
+}
+
+ul{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+
+p{
+  margin: 0 15%;
+  margin-bottom: 5%;
+  text-align: justify;
+  line-height: 1.25;
+}
+
+ol{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+
+li{
+  margin: 0 3%;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+.article-titles {
+  font-size: 38px;
+}
+
+#footer-title {
+  font-size: 35px;
+  color: rgb(178,213,216);
+}
+
+nav a {
+  color: rgb(32,78,81);
+}
+
+footer {
+  background-color: rgb(61,152,158);
+  padding: 20px 0 45px 0;
+}
+
+footer a {
+  color: rgb(178,213,216);
+}
+
+footer ol li {
+  color: rgb(178,213,216);
+}

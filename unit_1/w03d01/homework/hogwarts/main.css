@@ -1,0 +1,23 @@
+body {
+  background-color: #F8F7FF;
+  text-align: center;
+}
+
+.owl{
+  font-family: fantasy;
+}
+
+table, th, td{
+  border: 1px solid gray;
+  margin: auto;
+}
+
+.cabbage{
+  color: chartreuse;
+}
+
+ul{
+  border: 3px solid black;
+  margin: 0px 30% 0px 30%;
+  list-style: none;
+}

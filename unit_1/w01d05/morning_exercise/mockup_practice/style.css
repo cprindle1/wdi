@@ -1,0 +1,40 @@
+h1{
+  text-align: center;
+  font-family: sans-serif;
+}
+h2, h3{
+  text-align: center;
+  font-family: sans-serif;
+}
+article{
+  padding-bottom: 30px;
+}
+img{
+  margin: auto;
+  display: block;
+  padding-bottom: 50px;
+}
+
+ol{
+  font-size: 10px;
+}
+footer{
+  padding-top: 5px;
+  background-color: #58959C;
+  color: #BAD4D7;
+}
+header{
+  background-color: #58959C;
+  color: #BAD4D7;
+}
+body{
+  background-color: #BAD4D7;
+  color: #2E4D50;
+}
+
+.nav1{
+  color: #58959C;
+}
+.nav2{
+  color: #BAD4D7;
+}

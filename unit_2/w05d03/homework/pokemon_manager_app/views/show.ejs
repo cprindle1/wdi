@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href='/css/app.css'>
+
+    </head>
+    <body>
+        <h1><%=pokemon.name; %></h1>
+      </br>
+      <img class="card" src=<%=pokemon.img%>>
+      <ul><h3>Types:</h3>
+        <%if(pokemon.type != undefined){%>
+      <% for(var i = 0; i < pokemon.type.length; i++){ %>
+            <li class="li"><%=pokemon.type[i]%></li>
+      <% } %>
+      <% } %>
+
+    </ul>
+    <ul>
+      <%if(pokemon.stats != undefined){%>
+      <%if(pokemon.stats.hp != undefined){%>
+        <li class="li">HP: <%=pokemon.stats.hp%></li>
+        <% } %>
+        <%if(pokemon.stats.attack != undefined){%>
+        <li class="li">Attack: <%=pokemon.stats.attack%></li>
+        <% } %>
+        <%if(pokemon.stats.defense != undefined){%>
+        <li class="li">Defense: <%=pokemon.stats.defense%></li>
+        <% } %>
+        <% } %>
+
+      </ul>
+      </br>
+        <nav>
+            <a href="/pokemon">Back to Pokemon Index</a>
+        </nav>
+    </body>
+</html>

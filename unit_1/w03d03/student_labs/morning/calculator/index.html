@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src='app.js'></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+      <div id="col0">
+        <button id='negPos' class ="negPos">-</button>
+      </div>
+      <div id="col1">
+        <div class='row'>
+          <button id='7' class ="numbers">7</button>
+          <button id='8' class ="numbers">8</button>
+          <button id='9' class ="numbers">9</button>
+        </div>
+        <div class='row'>
+          <button id='4' class ="numbers">4</button>
+          <button id='5' class ="numbers">5</button>
+          <button id='6' class ="numbers">6</button>
+        </div>
+        <div class='row'>
+          <button id='1' class ="numbers">1</button>
+          <button id='2' class ="numbers">2</button>
+          <button id='3' class ="numbers">3</button>
+        </div>
+        <div class='row'>
+          <button id='zero' class ="numbers">0</button>
+        </div>
+      </div>
+      <div id=col2>
+        <button id='c' class="clear">C</button>
+        <button id='+' class="operators">+</button>
+        <button id='-' class="operators">-</button>
+        <button id='x' class="operators">*</button>
+        <button id='/' class="operators">/</button>
+        <!-- <button id='^' class="operators">^</button> -->
+        <button id='=' class="solve">=</button>
+        <button id='.' class="decimal">.</button>
+
+      </div>
+    </div><br><br>
+    <div id="results">
+      <h4 id="answer"></h4>
+    </div><br>
+    <div id="working">
+    </div>
+
+
+
+  </body>
+</html>

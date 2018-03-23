@@ -1,0 +1,67 @@
+*{
+}
+
+#title{
+  text-align: center;
+}
+
+#selected{
+  overflow: auto;
+  width: 100%;
+}
+#wrapper{
+  display: inline-block;
+}
+#total{
+  text-align: center;
+}
+
+#regions{
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  /*float: right;*/
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+#biggerBox{
+  height: 100px;
+  width: 75%;
+  resize: none;
+  padding: 2px;
+  border: 1px solid lightgray;
+  margin-top: 1px;
+}
+
+#regions li{
+  float: left;
+  cursor: pointer;
+}
+
+#new{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#new input{
+  width: 75%;
+}
+
+#searchBox{
+  float: right;
+}
+#left{
+  float: left;
+  width: 40%;
+  max-height: 80vh;
+  overflow: auto;
+}
+#right{
+  float: right;
+  width: 60%;
+  max-height: 80vh;
+  overflow: auto;
+}

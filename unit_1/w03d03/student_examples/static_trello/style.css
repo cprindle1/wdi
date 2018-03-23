@@ -1,0 +1,49 @@
+*{
+  font-family: "helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+body{
+  background-color: #89609E;
+}
+
+#list1{
+  background-color: lightgrey;
+  width: 270px;
+  min-height: 100px;
+  border-radius: 5px;
+  padding: 7px;
+  position: relative;
+}
+
+#title{
+  font-size: 14px;
+}
+
+#userInput{
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#add-card{
+  background-color: #5CB248;
+  color: white;
+  border-radius: 5px;
+  /*border: 0px;*/
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.card{
+  background-color: white;
+  min-height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+  margin-bottom: 5px;
+}

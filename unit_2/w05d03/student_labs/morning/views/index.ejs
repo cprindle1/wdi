@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Products index page</h1>
+        <ul>
+          <% for(var i = 0; i < products.length; i++){ %>
+              <li>
+                  The <a href="/products/<%=i%>"><%=products[i].name; %></a> is  <%=products[i].price; %>.
+              </li>
+          <% } %>
+        </ul>
+        <a href="/products/new">Go to the New Products Page</a
+
+    </body>
+</html>

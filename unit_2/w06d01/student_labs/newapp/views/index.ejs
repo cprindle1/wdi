@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>People</h1>
+    <ul>
+    <% for(var i = 0; i < people.length; i++){ %>
+        <li>
+            <a href="/people/<%=people[i].id%>"><%=people[i].name; %></a> is  <%=people[i].age; %>.
+            <form action="/people/<%=people[i].id%>?_method=DELETE" method="POST">
+              <input type='submit' value="Delete This Person"/>
+              <a href="/people/<%=people[i].id; %>/edit">Edit This Person</a>
+            </form>
+        </li>
+    <% } %>
+</ul>
+<nav>
+  <a href='/people/new'>Create a New Person</a>
+</nav>
+  </body>
+</html>

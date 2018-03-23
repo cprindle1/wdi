@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Edit Fruit Page</h1>
+        <form action="/people/<%=people.id%>?_method=PUT" method="POST">
+    		<!--  NOTE: the form is pre-populated with values for the server-->
+    		Name: <input type="text" name="name" value="<%=people.name%>"/><br/>
+    		Age: <input type="text" name="age" value="<%=people.age%>"/><br/>
+
+            <br/>
+            <input type="submit" name="" value="Update"/>
+        </form>
+    </body>
+</html>

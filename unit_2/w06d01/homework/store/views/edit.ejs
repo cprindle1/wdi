@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href='/css/style.css'>
+    </head>
+    <body>
+        <h1 id="header">Edit Product Page</h1>
+<div class='product_container'>
+        <form class="form" action="/products/<%=products.id%>?_method=PUT" method="POST">
+    		<!--  NOTE: the form is pre-populated with values for the server-->
+    		Name: <input class = 'inputbox' type="text" name="name" value="<%=products.name%>"/><br/>
+        Image: <input class = 'inputbox' type="text" name="img" value="<%=products.img%>"/><br/>
+    		Price: <input class = 'inputbox' type="text" name="price" value="<%=products.price%>"/><br/>
+        Description: <input class = 'inputbox' type="text" name="description" value="<%=products.description%>"/><br/>
+        Quantity: <input class = 'inputbox' type="text" name="qty" value="<%=products.qty%>"/><br/>
+            <br/>
+            <div id="buttonDiv">
+            <input id='deleteButton' type="submit" value="Update"/>
+          </div>
+        </form>
+      </div>
+      <nav id='newProd'>
+      <a id='newProdLink' href='/products'>Back to Product Index</a>
+    </nav>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+h3{
+  color: red;
+  font-family: sans-serif;
+}
+img{
+  border: 1px solid black;
+}
+body{
+  border: 10px solid black;
+  border-left-style: none;
+  border-right-style: none;
+}
+.round{
+  border-radius: 50%;
+}
+nav{
+  background-color: black;
+}
+a{
+  color: white;
+  margin: 5px;
+  padding: 10px;
+}
+a:hover{
+  background-color: white;
+  color: black;
+}

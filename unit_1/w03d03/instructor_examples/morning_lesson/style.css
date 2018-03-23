@@ -1,0 +1,13 @@
+/*Testing that my CSS is connected by changing the background color*/
+body {
+  background-color: thistle;
+}
+
+.alphabet{
+  margin: 10px;
+  border: solid 1px black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}

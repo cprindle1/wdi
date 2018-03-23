@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="baseCtrl as base">
+    <form ng-submit="base.find()">
+      <input ng-model="base.title" placeholder="Title"/></br>
+      <input type="submit" value="Search"/>
+    </form>
+    <div ng-click="base.showMovie(movie)" ng-repeat="movie in base.foundTitles">{{movie.Title}}
+    </br></br>
+    </div>
+    <div ng-show="base.clicked">
+    Title: {{base.detailedMovie.Title}}</br>
+    Year: {{base.detailedMovie.Year}}</br>
+    imdbID: {{base.detailedMovie.imdbID}}</br>
+    Poster: <img src="{{base.detailedMovie.Poster}}"/>
+    </div>
+
+  </body>
+</html>

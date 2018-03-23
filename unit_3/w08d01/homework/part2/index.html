@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-controller="CaesarController as caesar">
+    <div id="wrapper">
+    <div id="encode">
+    <h1>Encode</h1>
+    Input
+    <form ng-submit="caesar.caesarShift(caesar.str, 12)">
+      <input ng-model="caesar.str"/>
+      <!-- <input type="submit" value="Encrypt"/> -->
+    </form>
+    Encrypted
+    <div class="output">
+      {{caesar.caesarShift(caesar.str, 12)}}
+    </div>
+  </div>
+  <div id="decode">
+    <h1>Decode</h1>
+    Input
+    <form ng-submit="caesar.caesarShift(caesar.str2, -12)">
+      <input ng-model="caesar.str2"/>
+      <!-- <input type="submit" value="Decrypt"/> -->
+    </form>
+    Decrypted
+    <div class="output">
+    {{caesar.caesarShift(caesar.str2, -12)}}
+  </div>
+</div>
+</div>
+
+
+
+  </body>
+</html>

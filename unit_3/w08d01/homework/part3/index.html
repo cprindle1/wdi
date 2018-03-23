@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-controller="SongController as songCtrl">
+    <div class="songs">
+    <div class="song" ng-repeat="song in songCtrl.songs">
+      <h2>{{song.author}} ({{song.year}})</h2>
+      <h4>{{song.title}}</h4>
+        <h5 ng-repeat="lyric in song.lyrics">{{lyric}}</h5>
+        <button ng-click="songCtrl.shuffle(song.lyrics)">Shuffle</button>
+    </div>
+  </div>
+  <div class="songs">
+    <div class="song">
+      <h1>Add a Song</h1>
+  <form ng-submit="song.addSong()">
+    <input ng-model="author" placeholder="Author"/></br>
+    <input ng-model="title" placeholder="Title"/></br>
+    <input ng-model="year" placeholder="year"/></br>
+    <input ng-model="lyrics" placeholder="lyrics"/></br>
+    <input type="submit" value="Add Song"/>
+  </form>
+</div>
+</div>
+  </body>
+</html>

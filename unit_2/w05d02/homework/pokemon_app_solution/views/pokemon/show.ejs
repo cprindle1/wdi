@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <% include ../partials/header %>
+    <h1>Gotta Catch 'Em All!</h1>
+        <h2><%= pokemon.name %></h2>
+        <img src="<%= pokemon.img %>" alt="<%= pokemon.name %>" >
+        <br><br>
+        <li><a href="/pokemon"><- back</a></li>
+  </body>
+</html>

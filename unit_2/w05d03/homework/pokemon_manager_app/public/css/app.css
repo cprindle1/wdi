@@ -1,0 +1,31 @@
+.card{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid darkblue;
+
+}
+.cards{
+  display: inline-block;
+  padding: 5px
+}
+.li{
+  list-style: none;
+}
+.button{
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: darkblue;
+  color: white;
+}
+.input{
+  margin: 5px;
+  background-color: white;
+}
+*{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: lightyellow;
+
+}

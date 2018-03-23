@@ -1,0 +1,100 @@
+*{
+  background-color: black;
+  color: white;
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+
+button{
+  background-color: white;
+  color: black;
+}
+h1{
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.numbers{
+  display: flex;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+}
+.numbers{
+  width: 32%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 2px;
+  margin: auto;
+}
+
+#zero{
+  width: 99%;
+}
+.operators{
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+  padding: 2px;
+}
+.clear{
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+}
+.solve{
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+}
+.negPos{
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+}
+.decimal{
+  width: 50%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+}
+#calculator{
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#col0{
+  width: 10%;
+  /*display: flex;*/
+}
+#col1{
+  width: 65%;
+  /*display: flex;*/
+}
+#col2{
+  width: 20%;
+  /*display: flex;*/
+}
+
+#results{
+  background-color: white;
+  color: black;
+  width: 30%;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: auto;
+}
+#answer{
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}

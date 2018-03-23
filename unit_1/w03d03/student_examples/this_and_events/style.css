@@ -1,0 +1,13 @@
+*{
+  background: black;
+  color: white;
+}
+.alphabet{
+  margin: 10px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}

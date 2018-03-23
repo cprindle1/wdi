@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="WorldBank">
+<head>
+  <meta charset="utf-8">
+  <title>World Bank</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-controller="mainController as ctrl">
+  <h1 id="title">World Bank Loan Records Finder</h1>
+
+  <h3 id="total">Total Records: {{ctrl.count}}</h3></br>
+  <div id="searchBox">
+    Search For Record By Region: <input type="text" ng-model="searchBox" placeholder="Search">
+  </div></br></br>
+  <div id='wrapper'>
+    <div id="left">
+      <form id="new" name="newRecordForm" ng-submit="ctrl.processForm()" ng-model="ctrl.formdata">
+        Add a New Record
+        <input type="text" ng-model="ctrl.region" placeholder="Region"></br>
+        <textarea id="biggerBox" type="text" ng-model="ctrl.projectabstract" placeholder="Abstract"></textarea></br>
+        <input type="text" ng-model="ctrl.projectname" placeholder="Name"></br>
+        <input type="text" ng-model="ctrl.year" placeholder="Year"></br>
+        <input type="text" ng-model="ctrl.loanamnt" placeholder="Loan Amount"></br>
+        <button type="submit">SUBMIT</button>
+      </form>
+      <div id="selected">
+        <div ng-repeat="item in ctrl.selectedRegion">
+          <h3>{{item.region}}</h3>
+          <h4>{{item.projectname}}</h4>
+          {{item.projectabstract}}</br></br>
+          Year Approved: {{item.year}}</br></br>
+          Toatl Loan: {{item.loanamnt}}</br></br>
+          <button ng-click="ctrl.remove(item._id, item.region)">Delete</button>
+          <hr>
+        </br>
+      </div>
+    </div>
+  </div>
+  <div id="right">
+  <ul id="regions">
+    <li ng-click="ctrl.getRegion(region)" ng-repeat="region in ctrl.regions | orderBy | filter:searchBox">{{region}}, &nbsp</li>
+  </ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.thumbs{
+  border: 3px solid black;
+  border-radius: 5px;
+  max-width: 250px;
+  max-height: 250px
+}
+
+.noBullets{
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.navItem{
+  text-decoration: none;
+  margin: auto;
+}
+
+.image{
+  max-width: 90%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.photo{
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+}
+
+.by{
+  text-align: center;
+}
+
+.description{
+  text-align: center;
+}
+
+.header{
+  background-color: #B9D8F5;
+  border: 2px solid #B9D8F5;
+  color: #2058AF;
+}
+
+.header h1{
+    text-shadow: 1px 1px darkblue;
+}
+
+.links{
+  list-style: none;
+  background-color: white;
+  border-bottom: 2px solid #2058AF;
+  text-align: center;
+  display: flex;
+}
+
+.link{
+  margin-left: 20%;
+  margin-right: 20%;
+}

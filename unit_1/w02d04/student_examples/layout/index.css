@@ -1,0 +1,58 @@
+/**{
+  margin:0;
+  padding:0;
+
+}
+img{
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+section{
+  width: 50%;
+  border: 1px solid red;
+}*/
+
+/*img{
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+div{
+  padding: 1em 10%;
+  background: blue;
+  color: white;
+  text-align: center;
+  border-radius: 1em;
+}
+@media (min-width:1024px){
+  div{
+    background: red;
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  img{
+    width: 50%;
+    display: inline-block;
+  }
+}*/
+/*img{
+  width: 100%;
+}*/
+div{
+  font-size: 5em;
+  background: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 10em;
+  background: white;
+}

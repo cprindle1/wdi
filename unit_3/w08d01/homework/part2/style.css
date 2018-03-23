@@ -1,0 +1,30 @@
+input{
+  width: 200px;
+  height: 50px;
+}
+
+.output{
+  width: 204px;
+  height: 50px;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#wrapper{
+  text-align: center;
+  border: 4px solid darkblue;
+  background-color: lightblue;
+  border-radius: 5px;
+  width: 420px;
+}
+
+#encode{
+  display: inline-block;
+  background-color: lightblue;
+}
+
+#decode{
+  display: inline-block;
+  background-color: lightblue;
+}

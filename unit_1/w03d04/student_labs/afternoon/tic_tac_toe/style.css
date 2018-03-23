@@ -1,0 +1,22 @@
+*{
+
+}
+
+#board{
+  height: 762px;
+  width: 762px;
+  background-color: grey;
+  border: 1px solid black;
+}
+.square{
+  font-size: 150px;
+  text-align: center;
+  line-height: 250px;
+  vertical-align: middle;
+  background-color: white;
+  border: 2px solid black;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  overflow: hidden;
+}

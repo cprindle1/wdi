@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='MoviesApp'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src='/js/app.js'></script>
+  </head>
+  <body ng-controller = 'MainController as main'>
+    <h1>Movies</h1>
+    <ul>
+      <li ng-repeat = 'movies in main.movies' ng-click='main.showEdit(movies._id)'>
+        <ul ng-if="main.editableMoviesId !== movies._id">
+          <li>{{movies.title}}</li>
+          <li>{{movies.year}}</li>
+          <li>{{movies.rating}}</li>
+        </ul>
+        <form ng-submit="main.updateMovies(movies)" ng-if="main.editableMoviesId == movies._id">
+          <input type = 'text' ng-model = 'movies.title'/></br>
+          <input type = 'text' ng-model = 'movies.year'/></br>
+          <input type = 'text' ng-model = 'movies.rating'/></br>
+          <input type = 'submit' value = 'Update This Movies'/>        </form>
+        <button ng-click="main.deleteMovies(movies._id)">Delete</button>
+      </li>
+    </ul>
+    <form ng-submit = "main.create()">
+      <input type = 'text' placeholder="Title" ng-model = 'main.title'/></br>
+      <input type = 'text' placeholder="Year" ng-model = 'main.year'/></br>
+      <input type = 'text' placeholder="Rating" ng-model = 'main.rating'/></br>
+      <input type = 'submit' value = 'New Movie'/>
+    </form>
+  </body>
+</html>

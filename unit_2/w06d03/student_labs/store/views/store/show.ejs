@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1><%=store.name%></h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/store">Store Index</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Store Attributes:</h2>
+				<ul>
+					<li>Name: <%=store.name%></li>
+					<li>Address: <%=store.address%></li>
+				</ul>
+			</section>
+      <section>
+        <a href="/store/<%=store._id%>/edit">Edit</a>
+      </section>
+      <section>
+        <form action="/store/<%=store._id%>?_method=DELETE" method="post">
+          <input type="submit" value="Delete Store"/>
+        </form>
+      </section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app = "dating_app">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src = "app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body ng-controller = "mainController as ctrl">
+    <header>…</header>
+    <div class="container">
+      <main>…</main>
+      <nav>
+        <ul>
+          <li ng-repeat ="dater in ctrl.left_daters">
+            <img src = {{dater.img}} />
+            <h6>{{dater.name}}</h6>
+            <h6>{{dater.age}}</h6>
+            <h6>{{dater.gender}}</h6>
+          </li>
+        </ul>
+      </nav>
+      <aside>
+        <ul>
+          <li ng-repeat ="dater in ctrl.right_daters">
+            <img src = {{dater.img}} />
+            <h6>{{dater.name}}</h6>
+            <h6>{{dater.age}}</h6>
+            <h6>{{dater.gender}}</h6>
+          </li>
+        </ul>
+      </aside>
+    </div>
+<footer>
+  <form ng-submit="ctrl.processForm()">
+    <input type = "text" ng-model="ctrl.formdata.name" placeholder="name">
+    <input type = "text" ng-model="ctrl.formdata.age" placeholder="age">
+    <input type = "text" ng-model="ctrl.formdata.gender" placeholder="gender">
+    <input type = "text" ng-model="ctrl.formdata.img" placeholder="img">
+    <input type = "submit">
+  </form>
+</footer>
+  </body>
+</html>
